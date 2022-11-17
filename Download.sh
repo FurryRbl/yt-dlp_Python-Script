@@ -1,0 +1,1 @@
+yt-dlp -x -f "ba" --remux-video "wav" --recode-video "wav"  --audio-format 'wav' -o "Video/%(title)s/%(title)s.%(ext)s" --write-thumbnail --embed-chapters --convert-thumbnails "png" --parse-metadata "title:%(title)s,artist:%(artist)s,description:%(description)s" -R 10000 'https://youtube.com/playlist?list=PLjdVshrJ_c-CAfJ3lp-D9MYv16ReRDQzh'

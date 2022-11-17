@@ -8,7 +8,7 @@ def GetShellOut(Command):
     return Out.rstrip()
 
 def Download(url, DirFile):
-    DownloadArgs = 'axel -n 10 -o "' + DirFile + '" "' + url + '"'
+    DownloadArgs = 'axel -n 16 -o "' + DirFile + '" "' + url + '"'
     print('下载命令: ' + DownloadArgs)
     Code = os.system(DownloadArgs)
     return Code
